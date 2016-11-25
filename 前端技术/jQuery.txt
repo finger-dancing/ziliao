@@ -1,0 +1,45 @@
+1. 什么是jQuery？
+jQuery是一个JavaScript函数库，它提供了强大的功能函数，能方便我们的开发，还解决了
+浏览器的兼容性问题。
+
+2. 如何使用jQuery？
+从官网上下载jquery的库文件，然后在html文件中引用它即可：
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+如果是HTML5：
+<head>
+<script src="jquery.js"></script>
+</head>
+
+3. jquery语法
+基础语法：$(selector).action()，比如：
+$("#test").hide()
+jquery使用$符号作为jquery的简介方式。
+
+4. jquery选择器
+4.1 元素选择器
+$("p.intro") 选取所有 class="intro" 的 <p> 元素。
+
+4.2 属性选择器
+$("[href]")选取所有带有href属性的元素
+
+4.3 css选择器
+$("p").css("background-color","red");
+
+5. jquery事件
+$("button").click(function(){
+	$("p").hide();
+});
+为了你的代码更容易维护，我们做一下建议：
+把jquery代码置于单独的.js文件中
+把所有事件处理函数置于文档就绪事件处理器中
+把所有jquery代码置于事件处理函数中
+
+
+
+
+
+
+
+
